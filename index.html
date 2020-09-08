@@ -76,12 +76,12 @@
             <div class="col-4">
                 <div class="card playing-card">
                     <div class="rank">K</div>
-                    <div class="suit"></div>
+                    <!-- <div class="suit"></div> -->
                     <div class="card-image-container">
                         <img class="card-image"
                             src="https://i.pinimg.com/originals/06/dd/e9/06dde9178bab49181916d99ed2aff605.jpg">
                     </div>
-                    <div class="suit"></div>
+                    <!-- <img class="suit"></div> -->
                     <div class="rank">K</div>
 
 
@@ -101,7 +101,7 @@
             const ranks = [
                 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'
             ]
-            const cardColor = Math.random() > .5 ? 'blue' : 'red';
+            const cardColor = Math.random() > .5 ? 'black' : 'red';
             let rank = Math.floor(Math.random() * Math.floor(ranks.length));
             const cardRank = document.body.getElementsByClassName('rank');
             for (i = 0; i < cardRank.length; i++) {
@@ -121,6 +121,7 @@
             const suits = document.body.getElementsByClassName('suit')
             for (i = 0; i < suits.length; i++) {
                 suits[i].innerHTML = cardSuit;
+                suits[i].src = `assets/svgs/${cardSuit}.svg`;
             }
         }
     </script>
@@ -234,7 +235,7 @@
     .link:hover {
         color: inherit;
         text-decoration: none;
-        text-shadow: 0px 0px 2px rgba(192, 192, 192, 0.25);
+        text-shadow: 0px 0px 4px rgba(192, 192, 192, 0.3);
 
     }
 
@@ -263,6 +264,8 @@
         border-style: solid;
         /* max-width: 100%;
         height: auto; */
+    }
+    .suit {
     }
 </style>
 
