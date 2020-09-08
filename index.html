@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>There's No Place Like Home</title>
+    <title>Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -15,73 +15,117 @@
 
 <body class="centered">
     <div class="container">
-        <div class="row">
+        <div class="row h-100">
             <div class="col-8">
-                <div class="row">
-                    <div class="col-4">
+                <div class="row h-100">
+                    <div class="col-4 section">
                         <div class="category">Tools</div>
-                        <div class="card">
-                            <!-- Tools -->
+                        <div class="card links">
+                            <h3><a class="link" href="https://drive.google.com">Google Drive</a></h3>
+                            <h3><a class="link" href="https://gmail.com">Gmail</a></h3>
+                            <h3><a class="link" href="https://github.com">github</a></h3>
                         </div>
+
+
+
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 section">
                         <div class="category">Social</div>
-                        <!-- <i class="fas fa-hat-wizard icon social-media"></i> -->
-                        <div class="card">
-                            <!--Social Media-->
-                            <h3><a href="https://facebook.com">Facebook</a></h3>
-                            <h3><a href="https://reddit.com">reddit</a></h3>
-                            <h3><a href="https://netflix.com">Netflix</a></h3>
+                        <div class="card links">
+                            <h3><a class="link" href="https://facebook.com">Facebook</a></h3>
+                            <h3><a class="link" href="https://reddit.com">reddit</a></h3>
+                            <h3><a class="link" href="https://twitter.com">Twitter</a></h3>
+                            <h3><a class="link" href="https://netflix.com">Netflix</a></h3>
 
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="category">Programming</div>
-                        <!-- <i class="fas fa-terminal icon programming"></i> -->
-                        <div class="card">
-                            <!--Programming-->
-                            <h3><a href="https://mycolor.space/">Color selector</a></h3>
-                            <h3><a href="https://websitesetup.org.com">Website Setup</a></h3>
-                            <h3><a href="https://fontAwesome.com">Font Awesome</a></h3>
-                            <h3><a href="https://github.com">Github</a></h3>
+                    <div class="col-4 section">
+                        <div class="category">Dev</div>
+                        <div class="card links">
+                            <h3><a class="link" href="https://mycolor.space/">Color selector</a></h3>
+                            <h3><a class="link" href="https://websitesetup.org.com">Website Setup</a></h3>
+                            <h3><a class="link" href="https://fontAwesome.com">Font Awesome</a></h3>
+                            <h3><a class="link" href="https://github.com">Github</a></h3>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 section">
                         <div class="category">News</div>
-                        <div class="card">
-                            <h3><a href="https://amazon.com">Amazon</a></h3>
-                            <h3><a href="https://thewhistlingkettle.com">The Whistling Kettle</a></h3>
+                        <div class="card links">
+                            <h3><a class="link" href="https://apnews.com">AP News</a></h3>
+                            <h3><a class="link" href="https://www.bbc.com/">BBC</a></h3>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 section">
                         <div class="category">Shopping</div>
-                        <!-- <i class="fas fa-shopping-cart icon shopping"></i> -->
-                        <div class="card">
-                            <h3><a href="https://amazon.com">Amazon</a></h3>
-                            <h3><a href="https://thewhistlingkettle.com">The Whistling Kettle</a></h3>
+                        <div class="card links">
+                            <h3><a class="link" href="https://amazon.com">Amazon</a></h3>
+                            <h3><a class="link" href="https://thewhistlingkettle.com">The Whistling Kettle</a></h3>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 section">
                         <div class="category">Projects</div>
-                        <!-- <i class="fas fa-file-code icon projects"></i>-->
-                        <div class="card">
-                            <h3><a href="https://ideaSpork.com">Projects</a></h3>
-                            <h3><a href="https://sendHappyFacts.com">Send Happy Facts</a></h3>
-                            <h3><a href="https://2020GiftShop.com">2020 Gift Shop</a></h3>
+                        <div class="card links">
+                            <h3><a class="link" href="https://ideaSpork.com">idea Spork</a></h3>
+                            <h3><a class="link" href="https://sendHappyFacts.com">Send Happy Facts</a></h3>
+                            <h3><a class="link" href="https://2020GiftShop.com">2020 Gift Shop</a></h3>
+                            <h3><a class="link" href="https://poptab.com">PopTab</a></h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <img src="assets/images/king-diamond.jpg">
+            <div class="col-4">
+                <div class="card playing-card">
+                    <div class="rank">K</div>
+                    <div class="suit"></div>
+                    <div class="card-image-container">
+                        <img class="card-image"
+                            src="https://i.pinimg.com/originals/06/dd/e9/06dde9178bab49181916d99ed2aff605.jpg">
+                    </div>
+                    <div class="suit"></div>
+                    <div class="rank">K</div>
+
+                </div>
             </div>
+            <!-- <div class="col">
+                <img src="assets/images/king-diamond.jpg">
+
+            </div> -->
         </div>
 
 
 
     </div>
 
+    <script>
+        const cardColor = setCardColor();
+        setCardSuit(cardColor);
 
+        function setCardColor() {
+            const ranks = [
+                1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'
+            ]
+            const cardColor = Math.random() > .5 ? 'blue' : 'red';
+            let rank = Math.floor(Math.random() * Math.floor(ranks.length));
+            const cardRank = document.body.getElementsByClassName('rank');
+            for (i = 0; i < cardRank.length; i++) {
+                cardRank[i].style.color = cardColor;
+            }
+            return cardColor;
+        }
+
+        function setCardSuit(cardColor) {
+            let cardSuit;
+            if (cardColor == 'red') {
+                cardSuit = Math.random() > .5 ? 'heart' : 'diamond';
+            } else {
+                cardSuit = Math.random() > .5 ? 'club' : 'spade';
+            }
+            const suits = document.body.getElementsByClassName('suit')
+            for (i = 0; i < suits.length; i++) {
+                suits[i].innerHTML = cardSuit;
+            }
+        }
+    </script>
 
 
     <!--
@@ -106,12 +150,13 @@
 
         Send Happy Facts
         2020 Gift Shop
+        poptab
+        mixedpebble.com
+        ideaspork.com
 
         Unpslash.com
 
-        Google Drive
-        Gmail
-        github
+
     -->
 
     <!--
@@ -119,15 +164,17 @@
     https://github.com/Pauloo27/homepage
     - Awesome one in react
     https://i.redd.it/3r9b1mtgh4751.png
-    - Basic Cards
+    - Basic card linkss
     https://www.reddit.com/r/startpages/comments/ggcfit/with_source_if_you_want_3/
-    - Basic Cards with waves at bottom
+    - Basic card linkss with waves at bottom
     https://www.reddit.com/r/startpages/comments/hr3g58/updated_version_of_my_startpage_with_an/
     - Sunset background changes with time idea
     https://www.reddit.com/r/startpages/comments/gxjqec/monochrome/
-    - Put images on playing cards and random display one
+    - Put images on playing card linkss and random display one
     https://preview.redd.it/vwd20bzd9v341.png?width=1024&auto=webp&s=dbe6f0f9bd4130fae6a7292107a28326dd429380
     - Tab ideas
+    https://www.reddit.com/r/startpages/comments/givaga/created_a_minimal_startpage_for_chrome/
+    - On hover color change idea
 
 -->
 </body>
@@ -147,10 +194,8 @@
         height: 100vh;
     }
 
-
-
-    .col {
-        height: 100%;
+    .section {
+        min-height: 200px;
     }
 
 
@@ -169,59 +214,59 @@
         height: 20%;
         font-size: 1.5vw;
         color: white;
-        text-shadow: 0px 0px 2px rgba(192, 192, 192, 0.25);
+        text-shadow: 0px 0px 2px rgba(192, 192, 192, 0.5);
     }
 
-    .card {
+    .links {
         padding: 5%;
         background-color: var(--secondary-color);
         width: 100%;
         height: 80%;
         border-radius: 5px;
         box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+
     }
 
-
-    a {
+    .link {
         font-size: 1.25vw;
         color: var(--font-color);
+
     }
+
+    .link:hover {
+        color: inherit;
+        text-decoration: none;
+        text-shadow: 0px 0px 2px rgba(192, 192, 192, 0.25);
+
+    }
+
+
+
 
     img {
         border-radius: 15px;
     }
 
-    /* .icon {
-        font-size: 5em;
+    .playing-card {
+        padding: 5%;
+        height: 100%;
+        width: 80%;
+        border-radius: 5%;
     }
 
-    .social-media {
-        color: #EB297B;
-
+    .rank {
+        font-size: 16px;
     }
 
-    .shopping {
-        color: #BB4ABD;
-
+    .card-image-container {
+        width: 100%;
+        height: 100%;
     }
 
-    .programming {
-        color: #436DE3;
-
+    .card-image {
+        max-width: 100%;
+        height: auto;
     }
-
-    .projects {
-        color: #007FDC;
-
-    } */
 </style>
-<!--
-#EA4831
-#EB297B
-#BB4ABD
-#436DE3
-#007FDC
-#0082AE
--->
 
 </html>
