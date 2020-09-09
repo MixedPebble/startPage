@@ -75,14 +75,42 @@
             </div>
             <div class="col-4">
                 <div class="card playing-card">
-                    <div class="rank">K</div>
-                    <!-- <div class="suit"></div> -->
+                    <div class="container playing-card-grid">
+                        <!--ROW 1-->
+                        <div class="row playing-card-row-suite">
+                            <div class="col-2 playing-card-col text-center">
+                                <div class="rank"></div>
+                            </div>
+                            <div class="col playing-card-col"></div>
+                            <div class="col-2 playing-card-col"></div>
+                        </div>
+                        <!--ROW 2-->
+                        <div class="row playing-card-row-img">
+                            <div class="col-2 playing-card-col"><img class="suit" /></div>
+                            <div class="col playing-card-col">
+                                <img class="card-image"
+                                    src="https://i.pinimg.com/originals/06/dd/e9/06dde9178bab49181916d99ed2aff605.jpg">
+                            </div>
+                            <div class="col-2 playing-card-col" style="position: relative"><img class="suit"
+                                    style="position: absolute; bottom: 0;" /></div>
+                        </div>
+                        <!--ROW 3-->
+                        <div class="row playing-card-row-suite">
+                            <div class="col-2 playing-card-col"></div>
+                            <div class="col playing-card-col"></div>
+                            <div class="col-2 playing-card-col text-center">
+                                <div class="rank"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 
                     <div class="card-image-container">
                         <img class="card-image"
                             src="https://i.pinimg.com/originals/06/dd/e9/06dde9178bab49181916d99ed2aff605.jpg">
                     </div>
-                    <!-- <img class="suit"></div> -->
-                    <div class="rank">K</div>
+                    <img class="suit"></img>
+                    <div class="rank">K</div> -->
 
 
                 </div>
@@ -246,26 +274,39 @@
         border-radius: 5%;
     }
 
+    .playing-card-grid {
+        height: 100%;
+    }
+
+    .playing-card-row-suite {
+        height: 15%;
+    }
+
+    .playing-card-row-img {
+        height: 70%;
+    }
+
+    .playing-card-col {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
     .rank {
-        font-size: 16px;
+        font-size: 1.75vw;
     }
 
     .card-image-container {
-        width: 100%;
-        height: 100%;
-        background-color:green;
-        object-fit: fill;
     }
 
     .card-image {
         object-fit: fill;
         width: 100%;
         height: 100%;
-        border-style: solid;
-        /* max-width: 100%;
-        height: auto; */
     }
+
     .suit {
+        width: 100%;
     }
 </style>
 
