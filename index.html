@@ -70,35 +70,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-4">
-                <div class="card playing-card">
-                    <div class="container playing-card-grid">
-                        <div class="row playing-card-row-suite">
-                            <div class="col-2 playing-card-col text-center centered">
-                                <div class="rank"></div>
-                            </div>
-                            <div class="col playing-card-col"></div>
-                            <div class="col-2 playing-card-col"></div>
-                        </div>
-                        <div class="row playing-card-row-img">
-                            <div class="col-2 playing-card-col"><img class="suit" /></div>
-                            <div class="col playing-card-col">
-                                <img class="card-image"
-                                    src="https://i.pinimg.com/originals/06/dd/e9/06dde9178bab49181916d99ed2aff605.jpg">
-                            </div>
-                            <div class="col-2 playing-card-col" style="position: relative"><img class="suit"
-                                    style="position: absolute; bottom: 0;" /></div>
-                        </div>
-                        <div class="row playing-card-row-suite">
-                            <div class="col-2 playing-card-col"></div>
-                            <div class="col playing-card-col"></div>
-                            <div class="col-2 playing-card-col text-center centered">
-                                <div class="rank"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
 
 
@@ -106,36 +77,6 @@
     </div>
 
     <script>
-        const cardColor = setCardRankAndColor();
-        setCardSuit(cardColor);
-
-        function setCardRankAndColor() {
-            const ranks = [
-                1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'
-            ]
-            const cardColor = Math.random() > .5 ? 'black' : 'red';
-            let rank = Math.floor(Math.random() * Math.floor(ranks.length));
-            const cardRank = document.body.getElementsByClassName('rank');
-            for (i = 0; i < cardRank.length; i++) {
-                cardRank[i].style.color = cardColor;
-                cardRank[i].innerHTML = ranks[rank]
-            }
-            return cardColor;
-        }
-
-        function setCardSuit(cardColor) {
-            let cardSuit;
-            if (cardColor == 'red') {
-                cardSuit = Math.random() > .5 ? 'heart' : 'diamond';
-            } else {
-                cardSuit = Math.random() > .5 ? 'club' : 'spade';
-            }
-            const suits = document.body.getElementsByClassName('suit')
-            for (i = 0; i < suits.length; i++) {
-                suits[i].innerHTML = cardSuit;
-                suits[i].src = `assets/svgs/${cardSuit}.svg`;
-            }
-        }
     </script>
 
 
