@@ -11,7 +11,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
-<body class="centered">
+<body> class="centered"
     <div class="container">
         <div class="row">
             <div class="col">
@@ -40,7 +40,8 @@
                             <h3><a class="dev-link link" href="https://mycolor.space/">Color selector</a></h3>
                             <h3><a class="dev-link link" href="https://websitesetup.org/">Website Setup</a></h3>
                             <h3><a class="dev-link link" href="https://dribble.com/">Dribble</a></h3>
-                            <h3><a class="dev-link link" href="https://color.adobe.com/create/color">Color creator</a></h3>
+                            <h3><a class="dev-link link" href="https://color.adobe.com/create/color">Color creator</a>
+                            </h3>
                             <h3><a class="dev-link link" href="https://fontAwesome.com">Font Awesome</a></h3>
                             <h3><a class="dev-link link" href="https://github.com">Github</a></h3>
                         </div>
@@ -56,14 +57,16 @@
                         <div class="category shopping">Shopping</div>
                         <div class="card links">
                             <h3><a class="shopping-link link" href="https://amazon.com">Amazon</a></h3>
-                            <h3><a class="shopping-link link" href="https://thewhistlingkettle.com">The Whistling Kettle</a></h3>
+                            <h3><a class="shopping-link link" href="https://thewhistlingkettle.com">The Whistling
+                                    Kettle</a></h3>
                         </div>
                     </div>
                     <div class="col-4 section">
                         <div class="category projects">Projects</div>
                         <div class="card links">
                             <h3><a class="projects-link link" href="https://ideaSpork.com">idea Spork</a></h3>
-                            <h3><a class="projects-link link" href="https://sendHappyFacts.com">Send Happy Facts</a></h3>
+                            <h3><a class="projects-link link" href="https://sendHappyFacts.com">Send Happy Facts</a>
+                            </h3>
                             <h3><a class="projects-link link" href="https://2020GiftShop.com">2020 Gift Shop</a></h3>
                             <h3><a class="projects-link link" href="https://poptab.com">PopTab</a></h3>
                         </div>
@@ -76,8 +79,29 @@
 
     </div>
 
-    <script>
-    </script>
+
+    <div class="waves-container">
+        <div>
+            <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" class="wave-1" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" class="wave-2" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" class="wave-3" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" class="wave-4" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+
+
+
+
+
 
 
     <!--
@@ -124,9 +148,36 @@
     - WaVeS
 
 -->
+
 </body>
 
 <style>
+
+.centered {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wave-1 {
+        fill: var(--dev-color);
+        opacity: .7;
+    }
+
+    .wave-2 {
+        fill: var(--dev-color);
+        opacity: .5;
+    }
+
+    .wave-3 {
+        fill: var(--dev-color);
+        opacity: .3;
+    }
+
+    .wave-4 {
+        fill: var(--dev-color);
+    }
+
     :root {
         --primary-color: #263237;
         --secondary-color: #404D59;
@@ -137,7 +188,7 @@
         --social-color: #83F708;
         --social-color-darken: #50C400;
         --dev-color: #0883F7;
-        --news-color:#08F77C;
+        --news-color: #08F77C;
         --shopping-color: #7C08F7;
         --projects-color: #F77C08;
 
@@ -150,13 +201,16 @@
         /* padding-left: 5%; */
 
     }
+
     .card {
-        height :80%;
+        height: 80%;
 
     }
+
     .tools {
-        color: var(--tools-color); 
+        color: var(--tools-color);
     }
+
     .social {
         color: var(--social-color);
     }
@@ -185,34 +239,41 @@
         border-radius: 5px;
         box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.15);
     }
+
     .link {
         color: inherit
     }
+
     .tools-link:hover {
         color: var(--tools-color);
         text-decoration: none;
         text-shadow: 0px 0px 0px var(--tools-color);
     }
+
     .social-link:hover {
         color: var(--social-color);
         text-decoration: none;
         text-shadow: 0px 0px 0px var(--social-color);
     }
+
     .dev-link:hover {
         color: var(--dev-color);
         text-decoration: none;
         text-shadow: 0px 0px 0px var(--dev-color);
     }
+
     .news-link:hover {
         color: var(--news-color);
         text-decoration: none;
         text-shadow: 0px 0px 0px var(--news-color);
     }
+
     .shopping-link:hover {
         color: var(--shopping-color);
         text-decoration: none;
         text-shadow: 0px 0px 0px var(--shopping-color);
     }
+
     .projects-link:hover {
         color: var(--projects-color);
         text-decoration: none;
@@ -235,6 +296,62 @@
         align-items: center;
     }
 
+    .waves-container {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); */
+    }
+
+    .waves {
+        position: relative;
+        width: 100%;
+        height: 10vh;
+
+    }
+
+    /* Animation */
+    .parallax>use {
+        animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+    }
+
+    .parallax>use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+    }
+
+    .parallax>use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+    }
+
+    .parallax>use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+    }
+
+    .parallax>use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+    }
+
+    @keyframes move-forever {
+        0% {
+            transform: translate3d(-90px, 0, 0);
+        }
+
+        100% {
+            transform: translate3d(85px, 0, 0);
+        }
+    }
+
+    /*Shrinking for mobile*/
+    @media (max-width: 768px) {
+        .waves {
+            height: 40px;
+            min-height: 40px;
+        }
+    }
 </style>
 
 </html>
