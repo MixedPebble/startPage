@@ -11,7 +11,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
-<body> class="centered"
+<body class="centered"> 
     <div class="container">
         <div class="row">
             <div class="col">
@@ -153,30 +153,6 @@
 
 <style>
 
-.centered {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .wave-1 {
-        fill: var(--dev-color);
-        opacity: .7;
-    }
-
-    .wave-2 {
-        fill: var(--dev-color);
-        opacity: .5;
-    }
-
-    .wave-3 {
-        fill: var(--dev-color);
-        opacity: .3;
-    }
-
-    .wave-4 {
-        fill: var(--dev-color);
-    }
 
     :root {
         --primary-color: #263237;
@@ -195,11 +171,37 @@
 
     }
 
+
+    .wave-1 {
+        fill: var(--secondary-color);
+        opacity: .7;
+    }
+
+    .wave-2 {
+        fill: var(--secondary-color);
+        opacity: .5;
+    }
+
+    .wave-3 {
+        fill: var(--secondary-color);
+        opacity: .3;
+    }
+
+    .wave-4 {
+        fill: var(--secondary-color);
+    }
+
     .category {
         font-size: 2em;
         color: white;
         /* padding-left: 5%; */
 
+    }
+
+    .centered {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .card {
