@@ -13,9 +13,9 @@
 
 <body class="centered">
     <div class="container">
-        <div class="row h-100">
+        <div class="row">
             <div class="col">
-                <div class="row h-100">
+                <div class="row">
                     <div class="col-4 section">
                         <div class="category tools">Tools</div>
                         <div class="card links">
@@ -120,6 +120,8 @@
     - Tab ideas
     https://www.reddit.com/r/startpages/comments/givaga/created_a_minimal_startpage_for_chrome/
     - On hover color change idea
+    https://codepen.io/csspoints/pen/WNeOEqd?editors=1100
+    - WaVeS
 
 -->
 </body>
@@ -143,11 +145,14 @@
     }
 
     .category {
-        height: 20%;
-        font-size: 2vw;
+        font-size: 2em;
         color: white;
-        /* text-shadow: 0px 0px 2px rgba(192, 192, 192, 0.5); */
-        
+        /* padding-left: 5%; */
+
+    }
+    .card {
+        height :80%;
+
     }
     .tools {
         color: var(--tools-color); 
@@ -214,14 +219,6 @@
         text-shadow: 0px 0px 0px var(--projects-color);
     }
 
-
-
-    /* .link:hover {
-        color: var(--tool-color);
-        text-decoration: none;
-        text-shadow: 0px 0px 0px var(--tool-color);
-    } */
-
     body {
         background-color: var(--primary-color);
         color: var(--font-color);
@@ -232,56 +229,12 @@
         min-height: 200px;
     }
 
-
     .centered {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    /* .playing-card {
-        padding: 5px;
-        height: 100%;
-        width: 80%;
-        border-radius: 5%;
-    }
-
-    .playing-card-grid {
-        height: 100%;
-    }
-
-    .playing-card-row-suite {
-        height: 15%;
-    }
-
-    .playing-card-row-img {
-        height: 70%;
-    }
-
-    .playing-card-col {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-
-    .rank {
-        font-size: 1.75vw;
-    }
-
-    .card-image {
-        padding-left:5px;
-        padding-right:5px;
-    }
-
-    .card-image {
-        object-fit: fill;
-        width: 100%;
-        height: 100%;
-    }
-
-    .suit {
-        width: 100%;
-    } */
 </style>
 
 </html>
